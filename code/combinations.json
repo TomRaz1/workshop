@@ -1,0 +1,245 @@
+[
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,32",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,64",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 206
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 196
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "ae",
+    "method_params": "512,256,128",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 176
+  }
+]

@@ -1,0 +1,46 @@
+[2025-09-02 14:11:28] === START MAIN ===
+[2025-09-02 14:11:28] [CONFIG] Method=umap Params=500,64,15 K=4 TR=1.0
+[2025-09-02 14:11:28] [CONFIG] Window shape=hamming size=60 step=1
+[2025-09-02 14:11:28] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_60_hamming_1/
+[2025-09-02 14:11:28] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-09-02_data_60_hamming_1_k4_umap_500_64_15/
+[2025-09-02 14:11:28] [INFO] Found existing DFC windows. Loading...
+[2025-09-02 14:11:28] [SUMMARY] Subjects=50 | Windows/subject=210 | Nodes=25 | Features=300
+[2025-09-02 14:11:28] [INFO] Starting clustering step
+[2025-09-02 14:11:28] [STAGE] Clustering / Dimensionality reduction
+Using exemplars for kmeans init:
+   original trace 210 windows per subject
+   median 6 (range 4-10) exemplars per subject
+   total 315 exemplars
+2025-09-02 14:11:40.460612: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-02 14:11:40.586647: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-02 14:11:40.587347: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-02 14:11:43.036626: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+UMAP(min_dist=0.5, n_components=64, verbose=True)
+Tue Sep  2 14:11:46 2025 Construct fuzzy simplicial set
+Tue Sep  2 14:11:46 2025 Finding Nearest Neighbors
+Tue Sep  2 14:11:46 2025 Building RP forest with 10 trees
+Tue Sep  2 14:11:54 2025 NN descent for 13 iterations
+	 1  /  13
+	 2  /  13
+	Stopping threshold met -- exiting after 2 iterations
+Tue Sep  2 14:12:17 2025 Finished Nearest Neighbor Search
+Tue Sep  2 14:12:23 2025 Construct embedding
+Epochs completed:   0%|            0/200 [00:00]	completed  0  /  200 epochs
+Epochs completed:   0%|            1/200 [00:04]Epochs completed:  10%| ▉          19/200 [00:04]	completed  20  /  200 epochs
+Epochs completed:  18%| █▊         36/200 [00:04]	completed  40  /  200 epochs
+Epochs completed:  26%| ██▋        53/200 [00:04]	completed  60  /  200 epochs
+Epochs completed:  35%| ███▌       70/200 [00:04]	completed  80  /  200 epochs
+Epochs completed:  44%| ████▎      87/200 [00:04]	completed  100  /  200 epochs
+Epochs completed:  52%| █████▏     104/200 [00:04]	completed  120  /  200 epochs
+Epochs completed:  60%| ██████     121/200 [00:04]Epochs completed:  69%| ██████▉    138/200 [00:04]	completed  140  /  200 epochs
+Epochs completed:  78%| ███████▊   155/200 [00:05]	completed  160  /  200 epochs
+Epochs completed:  86%| ████████▌  172/200 [00:05]	completed  180  /  200 epochs
+Epochs completed:  94%| █████████▍ 189/200 [00:05]Epochs completed: 100%| ██████████ 200/200 [00:05]
+Tue Sep  2 14:12:30 2025 Finished embedding
+[2025-09-02 14:12:30] [INFO] KMeans with k=4, dist=euclidean
+Got k-means initialisers
+[2025-09-02 14:12:34] [DONE] Clustering stage finished
+[2025-09-02 14:12:34] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
+[2025-09-02 14:12:35] [SAVED] clusters / fractional_occupancy / dwell_time / states
+[2025-09-02 14:12:35] === END MAIN SUCCESS ===

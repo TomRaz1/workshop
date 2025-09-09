@@ -1,0 +1,47 @@
+Matplotlib created a temporary cache directory at /tmp/matplotlib-bgxo21bd because the default path (/a/home/cc/students/csguests/tomraz/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2025-09-02 11:51:48] === START MAIN ===
+[2025-09-02 11:51:48] [CONFIG] Method=umap Params=100,32,15 K=4 TR=1.0
+[2025-09-02 11:51:48] [CONFIG] Window shape=hamming size=60 step=1
+[2025-09-02 11:51:48] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_60_hamming_1/
+[2025-09-02 11:51:48] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-09-02_data_60_hamming_1_k4_umap_100_32_15/
+[2025-09-02 11:51:48] [INFO] Found existing DFC windows. Loading...
+[2025-09-02 11:51:48] [SUMMARY] Subjects=50 | Windows/subject=210 | Nodes=25 | Features=300
+[2025-09-02 11:51:48] [INFO] Starting clustering step
+[2025-09-02 11:51:48] [STAGE] Clustering / Dimensionality reduction
+Using exemplars for kmeans init:
+   original trace 210 windows per subject
+   median 6 (range 4-10) exemplars per subject
+   total 315 exemplars
+2025-09-02 11:52:00.142532: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-02 11:52:00.270396: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-02 11:52:00.271091: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-02 11:52:02.659860: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+UMAP(n_components=32, verbose=True)
+Tue Sep  2 11:52:06 2025 Construct fuzzy simplicial set
+Tue Sep  2 11:52:06 2025 Finding Nearest Neighbors
+Tue Sep  2 11:52:06 2025 Building RP forest with 10 trees
+Tue Sep  2 11:52:14 2025 NN descent for 13 iterations
+	 1  /  13
+	 2  /  13
+	Stopping threshold met -- exiting after 2 iterations
+Tue Sep  2 11:52:38 2025 Finished Nearest Neighbor Search
+Tue Sep  2 11:52:43 2025 Construct embedding
+Epochs completed:   0%|            0/200 [00:00]	completed  0  /  200 epochs
+Epochs completed:   0%|            1/200 [00:04]	completed  20  /  200 epochs
+Epochs completed:  10%| █          21/200 [00:04]Epochs completed:  20%| ██         40/200 [00:04]	completed  40  /  200 epochs
+Epochs completed:  30%| ███        60/200 [00:04]	completed  60  /  200 epochs
+Epochs completed:  40%| ████       80/200 [00:04]	completed  80  /  200 epochs
+Epochs completed:  50%| █████      100/200 [00:04]	completed  100  /  200 epochs
+Epochs completed:  60%| ██████     120/200 [00:04]	completed  120  /  200 epochs
+Epochs completed:  70%| ███████    140/200 [00:04]	completed  140  /  200 epochs
+Epochs completed:  80%| ████████   160/200 [00:04]	completed  160  /  200 epochs
+Epochs completed:  90%| █████████  180/200 [00:05]	completed  180  /  200 epochs
+Epochs completed: 100%| ██████████ 200/200 [00:05]Epochs completed: 100%| ██████████ 200/200 [00:05]
+Tue Sep  2 11:52:49 2025 Finished embedding
+[2025-09-02 11:52:49] [INFO] KMeans with k=4, dist=euclidean
+Got k-means initialisers
+[2025-09-02 11:52:53] [DONE] Clustering stage finished
+[2025-09-02 11:52:53] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
+[2025-09-02 11:52:53] [SAVED] clusters / fractional_occupancy / dwell_time / states
+[2025-09-02 11:52:53] === END MAIN SUCCESS ===

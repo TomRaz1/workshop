@@ -1,0 +1,488 @@
+{
+  "ae|512,256,32|k2|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:02:20.211144",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 2,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k2_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T22:05:04.638545",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k2_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k2_tw30_step1_nTW206_params512-256-32.txt",
+    "runtime_sec": 164.427
+  },
+  "ae|512,256,32|k2|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:05:04.644506",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 2,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k2_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T22:07:17.847456",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k2_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k2_tw40_step1_nTW196_params512-256-32.txt",
+    "runtime_sec": 133.203
+  },
+  "ae|512,256,32|k2|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:07:17.853209",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 2,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k2_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T22:10:29.695608",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k2_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k2_tw60_step1_nTW176_params512-256-32.txt",
+    "runtime_sec": 191.842
+  },
+  "ae|512,256,32|k3|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:10:29.701832",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 3,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k3_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T22:12:47.578132",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k3_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k3_tw30_step1_nTW206_params512-256-32.txt",
+    "runtime_sec": 137.876
+  },
+  "ae|512,256,32|k3|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:12:47.582494",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 3,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k3_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T22:14:59.482387",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k3_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k3_tw40_step1_nTW196_params512-256-32.txt",
+    "runtime_sec": 131.9
+  },
+  "ae|512,256,32|k3|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:14:59.489450",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 3,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k3_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T22:18:10.295350",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k3_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k3_tw60_step1_nTW176_params512-256-32.txt",
+    "runtime_sec": 190.806
+  },
+  "ae|512,256,32|k4|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:18:10.301435",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 4,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k4_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T22:20:30.277963",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k4_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k4_tw30_step1_nTW206_params512-256-32.txt",
+    "runtime_sec": 139.976
+  },
+  "ae|512,256,32|k4|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:20:30.284131",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 4,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k4_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T22:22:46.793614",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k4_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k4_tw40_step1_nTW196_params512-256-32.txt",
+    "runtime_sec": 136.509
+  },
+  "ae|512,256,32|k4|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:22:46.800645",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,32",
+      "k": 4,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k4_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T22:26:01.832741",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-32_k4_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k4_tw60_step1_nTW176_params512-256-32.txt",
+    "runtime_sec": 195.032
+  },
+  "ae|512,256,64|k2|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:26:01.840236",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 2,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k2_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T22:28:26.138101",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k2_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k2_tw30_step1_nTW206_params512-256-64.txt",
+    "runtime_sec": 144.298
+  },
+  "ae|512,256,64|k2|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:28:26.145236",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 2,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k2_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T22:30:46.573907",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k2_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k2_tw40_step1_nTW196_params512-256-64.txt",
+    "runtime_sec": 140.429
+  },
+  "ae|512,256,64|k2|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:30:46.581793",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 2,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k2_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T22:34:03.816085",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k2_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k2_tw60_step1_nTW176_params512-256-64.txt",
+    "runtime_sec": 197.234
+  },
+  "ae|512,256,64|k3|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:34:03.824453",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 3,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k3_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T22:36:27.509540",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k3_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k3_tw30_step1_nTW206_params512-256-64.txt",
+    "runtime_sec": 143.685
+  },
+  "ae|512,256,64|k3|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:36:27.517506",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 3,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k3_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T22:38:49.040720",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k3_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k3_tw40_step1_nTW196_params512-256-64.txt",
+    "runtime_sec": 141.523
+  },
+  "ae|512,256,64|k3|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:38:49.049619",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 3,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k3_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T22:42:10.136140",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k3_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k3_tw60_step1_nTW176_params512-256-64.txt",
+    "runtime_sec": 201.086
+  },
+  "ae|512,256,64|k4|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:42:10.143713",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 4,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k4_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T22:44:34.882192",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k4_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k4_tw30_step1_nTW206_params512-256-64.txt",
+    "runtime_sec": 144.738
+  },
+  "ae|512,256,64|k4|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:44:34.889771",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 4,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k4_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T22:46:53.508073",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k4_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k4_tw40_step1_nTW196_params512-256-64.txt",
+    "runtime_sec": 138.618
+  },
+  "ae|512,256,64|k4|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:46:53.515715",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,64",
+      "k": 4,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k4_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T22:50:12.415715",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-64_k4_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k4_tw60_step1_nTW176_params512-256-64.txt",
+    "runtime_sec": 198.9
+  },
+  "ae|512,256,128|k2|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:50:12.423636",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 2,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k2_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T22:52:42.233378",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k2_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k2_tw30_step1_nTW206_params512-256-128.txt",
+    "runtime_sec": 149.81
+  },
+  "ae|512,256,128|k2|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:52:42.240547",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 2,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k2_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T22:55:06.232814",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k2_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k2_tw40_step1_nTW196_params512-256-128.txt",
+    "runtime_sec": 143.992
+  },
+  "ae|512,256,128|k2|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:55:06.240597",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 2,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k2_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T22:58:33.254839",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k2_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k2_tw60_step1_nTW176_params512-256-128.txt",
+    "runtime_sec": 207.014
+  },
+  "ae|512,256,128|k3|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T22:58:33.263566",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 3,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k3_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T23:01:07.329091",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k3_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k3_tw30_step1_nTW206_params512-256-128.txt",
+    "runtime_sec": 154.065
+  },
+  "ae|512,256,128|k3|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T23:01:07.337174",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 3,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k3_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T23:03:33.886530",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k3_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k3_tw40_step1_nTW196_params512-256-128.txt",
+    "runtime_sec": 146.549
+  },
+  "ae|512,256,128|k3|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T23:03:33.895288",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 3,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k3_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T23:07:00.806039",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k3_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k3_tw60_step1_nTW176_params512-256-128.txt",
+    "runtime_sec": 206.911
+  },
+  "ae|512,256,128|k4|tw30|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T23:07:00.814039",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 4,
+      "tw_len": 30,
+      "step": 1,
+      "n_tw": 206
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k4_tw30_step1_nTW206_2025-09-02",
+    "finished_at": "2025-09-02T23:09:33.426985",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k4_tw30_step1_nTW206_2025-09-02/res_n246_dimae_k4_tw30_step1_nTW206_params512-256-128.txt",
+    "runtime_sec": 152.613
+  },
+  "ae|512,256,128|k4|tw40|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T23:09:33.437871",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 4,
+      "tw_len": 40,
+      "step": 1,
+      "n_tw": 196
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k4_tw40_step1_nTW196_2025-09-02",
+    "finished_at": "2025-09-02T23:11:58.383702",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k4_tw40_step1_nTW196_2025-09-02/res_n246_dimae_k4_tw40_step1_nTW196_params512-256-128.txt",
+    "runtime_sec": 144.946
+  },
+  "ae|512,256,128|k4|tw60|s1|n246": {
+    "status": "finished",
+    "started_at": "2025-09-02T23:11:58.392061",
+    "params": {
+      "n_nodes": 246,
+      "dim_red": "ae",
+      "method_params": "512,256,128",
+      "k": 4,
+      "tw_len": 60,
+      "step": 1,
+      "n_tw": 176
+    },
+    "output_dir": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k4_tw60_step1_nTW176_2025-09-02",
+    "finished_at": "2025-09-02T23:15:24.859664",
+    "returncode": 0,
+    "stdout_stderr_file": "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/results_246_flattened_bibi/ae_params512-256-128_k4_tw60_step1_nTW176_2025-09-02/res_n246_dimae_k4_tw60_step1_nTW176_params512-256-128.txt",
+    "runtime_sec": 206.468
+  }
+}

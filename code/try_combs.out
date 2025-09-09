@@ -1,0 +1,144 @@
+==== GPU INFO ====
+Tue Sep  2 22:02:17 2025       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 550.120                Driver Version: 550.120        CUDA Version: 12.4     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA TITAN Xp                On  |   00000000:3D:00.0 Off |                  N/A |
+| 23%   23C    P8              9W /  250W |       2MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA TITAN Xp                On  |   00000000:3E:00.0 Off |                  N/A |
+| 40%   63C    P2            237W /  250W |   10713MiB /  12288MiB |     94%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA TITAN Xp                On  |   00000000:60:00.0 Off |                  N/A |
+| 23%   25C    P8              9W /  250W |       2MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA TITAN Xp                On  |   00000000:61:00.0 Off |                  N/A |
+| 29%   48C    P2             75W /  250W |    4273MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA TITAN Xp                On  |   00000000:B1:00.0 Off |                  N/A |
+| 23%   22C    P8              8W /  250W |       2MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA TITAN Xp                On  |   00000000:B2:00.0 Off |                  N/A |
+| 23%   24C    P8              8W /  250W |       2MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA TITAN Xp                On  |   00000000:DA:00.0 Off |                  N/A |
+| 23%   21C    P8              8W /  250W |       2MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA TITAN Xp                On  |   00000000:DB:00.0 Off |                  N/A |
+| 23%   21C    P8              9W /  250W |       2MiB /  12288MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    1   N/A  N/A    840973      C   python3                                     10708MiB |
+|    3   N/A  N/A    808638      C   python                                       4268MiB |
++-----------------------------------------------------------------------------------------+
+==== START RUN ====
+[2025-09-02 22:02:20] Using RANGES mode - 3 method-parameter combinations
+[2025-09-02 22:02:20]   ae: 512,256,32
+[2025-09-02 22:02:20]   ae: 512,256,64
+[2025-09-02 22:02:20]   ae: 512,256,128
+[2025-09-02 22:02:20] Total combinations to run (after policy): 27
+[2025-09-02 22:02:20] Start iteration 1/27 | ae|512,256,32|k2|tw30|s1|n246
+[2025-09-02 22:02:20] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 2
+[2025-09-02 22:05:04] Finished ae|512,256,32|k2|tw30|s1|n246 | Iteration time: 164.43s | Elapsed: 2.7m | ETA: 71.3m
+[2025-09-02 22:05:04] Start iteration 2/27 | ae|512,256,32|k2|tw40|s1|n246
+[2025-09-02 22:05:04] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 2
+[2025-09-02 22:07:17] Finished ae|512,256,32|k2|tw40|s1|n246 | Iteration time: 133.20s | Elapsed: 5.0m | ETA: 62.0m
+[2025-09-02 22:07:17] Start iteration 3/27 | ae|512,256,32|k2|tw60|s1|n246
+[2025-09-02 22:07:17] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 2
+[2025-09-02 22:10:29] Finished ae|512,256,32|k2|tw60|s1|n246 | Iteration time: 191.84s | Elapsed: 8.2m | ETA: 65.3m
+[2025-09-02 22:10:29] Start iteration 4/27 | ae|512,256,32|k3|tw30|s1|n246
+[2025-09-02 22:10:29] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 3
+[2025-09-02 22:12:47] Finished ae|512,256,32|k3|tw30|s1|n246 | Iteration time: 137.88s | Elapsed: 10.5m | ETA: 60.1m
+[2025-09-02 22:12:47] Start iteration 5/27 | ae|512,256,32|k3|tw40|s1|n246
+[2025-09-02 22:12:47] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 3
+[2025-09-02 22:14:59] Finished ae|512,256,32|k3|tw40|s1|n246 | Iteration time: 131.90s | Elapsed: 12.7m | ETA: 55.7m
+[2025-09-02 22:14:59] Start iteration 6/27 | ae|512,256,32|k3|tw60|s1|n246
+[2025-09-02 22:14:59] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 3
+[2025-09-02 22:18:10] Finished ae|512,256,32|k3|tw60|s1|n246 | Iteration time: 190.81s | Elapsed: 15.8m | ETA: 55.4m
+[2025-09-02 22:18:10] Start iteration 7/27 | ae|512,256,32|k4|tw30|s1|n246
+[2025-09-02 22:18:10] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 4
+[2025-09-02 22:20:30] Finished ae|512,256,32|k4|tw30|s1|n246 | Iteration time: 139.98s | Elapsed: 18.2m | ETA: 51.9m
+[2025-09-02 22:20:30] Start iteration 8/27 | ae|512,256,32|k4|tw40|s1|n246
+[2025-09-02 22:20:30] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 4
+[2025-09-02 22:22:46] Finished ae|512,256,32|k4|tw40|s1|n246 | Iteration time: 136.51s | Elapsed: 20.4m | ETA: 48.6m
+[2025-09-02 22:22:46] Start iteration 9/27 | ae|512,256,32|k4|tw60|s1|n246
+[2025-09-02 22:22:46] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,32 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 4
+[2025-09-02 22:26:01] Finished ae|512,256,32|k4|tw60|s1|n246 | Iteration time: 195.03s | Elapsed: 23.7m | ETA: 47.4m
+[2025-09-02 22:26:01] Start iteration 10/27 | ae|512,256,64|k2|tw30|s1|n246
+[2025-09-02 22:26:01] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 2
+[2025-09-02 22:28:26] Finished ae|512,256,64|k2|tw30|s1|n246 | Iteration time: 144.30s | Elapsed: 26.1m | ETA: 44.4m
+[2025-09-02 22:28:26] Start iteration 11/27 | ae|512,256,64|k2|tw40|s1|n246
+[2025-09-02 22:28:26] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 2
+[2025-09-02 22:30:46] Finished ae|512,256,64|k2|tw40|s1|n246 | Iteration time: 140.43s | Elapsed: 28.4m | ETA: 41.4m
+[2025-09-02 22:30:46] Start iteration 12/27 | ae|512,256,64|k2|tw60|s1|n246
+[2025-09-02 22:30:46] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 2
+[2025-09-02 22:34:03] Finished ae|512,256,64|k2|tw60|s1|n246 | Iteration time: 197.23s | Elapsed: 31.7m | ETA: 39.7m
+[2025-09-02 22:34:03] Start iteration 13/27 | ae|512,256,64|k3|tw30|s1|n246
+[2025-09-02 22:34:03] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 3
+[2025-09-02 22:36:27] Finished ae|512,256,64|k3|tw30|s1|n246 | Iteration time: 143.69s | Elapsed: 34.1m | ETA: 36.7m
+[2025-09-02 22:36:27] Start iteration 14/27 | ae|512,256,64|k3|tw40|s1|n246
+[2025-09-02 22:36:27] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 3
+[2025-09-02 22:38:49] Finished ae|512,256,64|k3|tw40|s1|n246 | Iteration time: 141.52s | Elapsed: 36.5m | ETA: 33.9m
+[2025-09-02 22:38:49] Start iteration 15/27 | ae|512,256,64|k3|tw60|s1|n246
+[2025-09-02 22:38:49] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 3
+[2025-09-02 22:42:10] Finished ae|512,256,64|k3|tw60|s1|n246 | Iteration time: 201.09s | Elapsed: 39.8m | ETA: 31.9m
+[2025-09-02 22:42:10] Start iteration 16/27 | ae|512,256,64|k4|tw30|s1|n246
+[2025-09-02 22:42:10] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 4
+[2025-09-02 22:44:34] Finished ae|512,256,64|k4|tw30|s1|n246 | Iteration time: 144.74s | Elapsed: 42.2m | ETA: 29.0m
+[2025-09-02 22:44:34] Start iteration 17/27 | ae|512,256,64|k4|tw40|s1|n246
+[2025-09-02 22:44:34] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 4
+[2025-09-02 22:46:53] Finished ae|512,256,64|k4|tw40|s1|n246 | Iteration time: 138.62s | Elapsed: 44.6m | ETA: 26.2m
+[2025-09-02 22:46:53] Start iteration 18/27 | ae|512,256,64|k4|tw60|s1|n246
+[2025-09-02 22:46:53] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,64 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 4
+[2025-09-02 22:50:12] Finished ae|512,256,64|k4|tw60|s1|n246 | Iteration time: 198.90s | Elapsed: 47.9m | ETA: 23.9m
+[2025-09-02 22:50:12] Start iteration 19/27 | ae|512,256,128|k2|tw30|s1|n246
+[2025-09-02 22:50:12] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 2
+[2025-09-02 22:52:42] Finished ae|512,256,128|k2|tw30|s1|n246 | Iteration time: 149.81s | Elapsed: 50.4m | ETA: 21.2m
+[2025-09-02 22:52:42] Start iteration 20/27 | ae|512,256,128|k2|tw40|s1|n246
+[2025-09-02 22:52:42] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 2
+[2025-09-02 22:55:06] Finished ae|512,256,128|k2|tw40|s1|n246 | Iteration time: 143.99s | Elapsed: 52.8m | ETA: 18.5m
+[2025-09-02 22:55:06] Start iteration 21/27 | ae|512,256,128|k2|tw60|s1|n246
+[2025-09-02 22:55:06] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 2
+[2025-09-02 22:58:33] Finished ae|512,256,128|k2|tw60|s1|n246 | Iteration time: 207.01s | Elapsed: 56.2m | ETA: 16.1m
+[2025-09-02 22:58:33] Start iteration 22/27 | ae|512,256,128|k3|tw30|s1|n246
+[2025-09-02 22:58:33] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 3
+[2025-09-02 23:01:07] Finished ae|512,256,128|k3|tw30|s1|n246 | Iteration time: 154.06s | Elapsed: 58.8m | ETA: 13.4m
+[2025-09-02 23:01:07] Start iteration 23/27 | ae|512,256,128|k3|tw40|s1|n246
+[2025-09-02 23:01:07] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 3
+[2025-09-02 23:03:33] Finished ae|512,256,128|k3|tw40|s1|n246 | Iteration time: 146.55s | Elapsed: 61.2m | ETA: 10.6m
+[2025-09-02 23:03:33] Start iteration 24/27 | ae|512,256,128|k3|tw60|s1|n246
+[2025-09-02 23:03:33] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 3
+[2025-09-02 23:07:00] Finished ae|512,256,128|k3|tw60|s1|n246 | Iteration time: 206.91s | Elapsed: 64.7m | ETA: 8.1m
+[2025-09-02 23:07:00] Start iteration 25/27 | ae|512,256,128|k4|tw30|s1|n246
+[2025-09-02 23:07:00] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 30 -s 1 -k 4
+[2025-09-02 23:09:33] Finished ae|512,256,128|k4|tw30|s1|n246 | Iteration time: 152.61s | Elapsed: 67.2m | ETA: 5.4m
+[2025-09-02 23:09:33] Start iteration 26/27 | ae|512,256,128|k4|tw40|s1|n246
+[2025-09-02 23:09:33] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 40 -s 1 -k 4
+[2025-09-02 23:11:58] Finished ae|512,256,128|k4|tw40|s1|n246 | Iteration time: 144.95s | Elapsed: 69.6m | ETA: 2.7m
+[2025-09-02 23:11:58] Start iteration 27/27 | ae|512,256,128|k4|tw60|s1|n246
+[2025-09-02 23:11:58] Running command: python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py ae 512,256,128 /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat -w hamming -l 60 -s 1 -k 4
+[2025-09-02 23:15:24] Finished ae|512,256,128|k4|tw60|s1|n246 | Iteration time: 206.47s | Elapsed: 73.1m | ETA: 0.0m
+[2025-09-02 23:15:24] All combinations looped.
+[2025-09-02 23:15:24] SUMMARY:
+[2025-09-02 23:15:24]   Mode: RANGES
+[2025-09-02 23:15:24]   Finished: 27/27
+[2025-09-02 23:15:24]   Total runtime: 1.22 hours
+[2025-09-02 23:15:24]   Avg time per finished combo: 162.4 seconds
+==== END RUN ====

@@ -1,0 +1,2513 @@
+[
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,16",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,32",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,64",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "pca",
+    "method_params": "1,1,128",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,32,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,64,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "100,128,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,32,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,64,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "500,128,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,32,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,64,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,15",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,30",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 2,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 2,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 2,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 3,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 3,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 3,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 4,
+    "tw_len": 30,
+    "step": 1,
+    "n_tw": 122
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 4,
+    "tw_len": 40,
+    "step": 1,
+    "n_tw": 112
+  },
+  {
+    "n_nodes": 246,
+    "dim_red": "umap",
+    "method_params": "1000,128,50",
+    "k": 4,
+    "tw_len": 60,
+    "step": 1,
+    "n_tw": 92
+  }
+]

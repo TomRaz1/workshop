@@ -1,0 +1,21 @@
+Matplotlib created a temporary cache directory at /tmp/matplotlib-gnsv5bmi because the default path (/a/home/cc/students/csguests/tomraz/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+[2025-09-02 11:38:14] === START MAIN ===
+[2025-09-02 11:38:14] [CONFIG] Method=pca Params=1,1,32 K=4 TR=1.0
+[2025-09-02 11:38:14] [CONFIG] Window shape=hamming size=30 step=1
+[2025-09-02 11:38:14] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_30_hamming_1/
+[2025-09-02 11:38:14] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-09-02_data_30_hamming_1_k4_pca_32/
+[2025-09-02 11:38:14] [INFO] Found existing DFC windows. Loading...
+[2025-09-02 11:38:14] [SUMMARY] Subjects=38 | Windows/subject=205 | Nodes=17 | Features=136
+[2025-09-02 11:38:14] [INFO] Starting clustering step
+[2025-09-02 11:38:14] [STAGE] Clustering / Dimensionality reduction
+Using exemplars for kmeans init:
+   original trace 205 windows per subject
+   median 11 (range 8-17) exemplars per subject
+   total 440 exemplars
+[2025-09-02 11:38:15] [INFO] PCA to 32 components
+[2025-09-02 11:38:16] [INFO] KMeans with k=4, dist=euclidean
+Got k-means initialisers
+[2025-09-02 11:38:19] [DONE] Clustering stage finished
+[2025-09-02 11:38:19] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
+[2025-09-02 11:38:20] [SAVED] clusters / fractional_occupancy / dwell_time / states
+[2025-09-02 11:38:20] === END MAIN SUCCESS ===

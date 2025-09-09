@@ -1,0 +1,20 @@
+[2025-08-29 12:49:55] === START MAIN ===
+[2025-08-29 12:49:55] [CONFIG] Method=pca Params=1,1,128 K=2 TR=1.0
+[2025-08-29 12:49:55] [CONFIG] Window shape=hamming size=40 step=1
+[2025-08-29 12:49:55] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_40_hamming_1/
+[2025-08-29 12:49:55] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-08-29_data_40_hamming_1_k2_pca_128/
+[2025-08-29 12:49:55] [INFO] Found existing DFC windows. Loading...
+[2025-08-29 12:49:55] [SUMMARY] Subjects=38 | Windows/subject=195 | Nodes=17 | Features=136
+[2025-08-29 12:49:55] [INFO] Starting clustering step
+[2025-08-29 12:49:55] [STAGE] Clustering / Dimensionality reduction
+Using exemplars for kmeans init:
+   original trace 195 windows per subject
+   median 9 (range 6-12) exemplars per subject
+   total 329 exemplars
+[2025-08-29 12:49:56] [INFO] PCA to 128 components
+[2025-08-29 12:49:56] [INFO] KMeans with k=2, dist=euclidean
+Got k-means initialisers
+[2025-08-29 12:50:02] [DONE] Clustering stage finished
+[2025-08-29 12:50:02] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
+[2025-08-29 12:50:02] [SAVED] clusters / fractional_occupancy / dwell_time / states
+[2025-08-29 12:50:02] === END MAIN SUCCESS ===

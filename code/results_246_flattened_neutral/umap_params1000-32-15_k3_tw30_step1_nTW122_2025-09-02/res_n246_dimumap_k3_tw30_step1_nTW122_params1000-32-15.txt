@@ -1,0 +1,48 @@
+[2025-09-02 15:16:38] === START MAIN ===
+[2025-09-02 15:16:38] [CONFIG] Method=umap Params=1000,32,15 K=3 TR=1.0
+[2025-09-02 15:16:38] [CONFIG] Window shape=hamming size=30 step=1
+[2025-09-02 15:16:38] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_30_hamming_1/
+[2025-09-02 15:16:38] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-09-02_data_30_hamming_1_k3_umap_1000_32_15/
+[2025-09-02 15:16:38] [INFO] Found existing DFC windows. Loading...
+[2025-09-02 15:16:38] [SUMMARY] Subjects=38 | Windows/subject=205 | Nodes=17 | Features=136
+[2025-09-02 15:16:38] [INFO] Starting clustering step
+[2025-09-02 15:16:38] [STAGE] Clustering / Dimensionality reduction
+Using exemplars for kmeans init:
+   original trace 205 windows per subject
+   median 11 (range 8-17) exemplars per subject
+   total 440 exemplars
+2025-09-02 15:16:50.459977: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-02 15:16:50.587283: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
+2025-09-02 15:16:50.587989: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-09-02 15:16:55.633644: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+UMAP(min_dist=1.0, n_components=32, verbose=True)
+Tue Sep  2 15:17:02 2025 Construct fuzzy simplicial set
+Tue Sep  2 15:17:02 2025 Finding Nearest Neighbors
+Tue Sep  2 15:17:02 2025 Building RP forest with 9 trees
+Tue Sep  2 15:17:10 2025 NN descent for 13 iterations
+	 1  /  13
+	 2  /  13
+	 3  /  13
+	 4  /  13
+	Stopping threshold met -- exiting after 4 iterations
+Tue Sep  2 15:17:33 2025 Finished Nearest Neighbor Search
+Tue Sep  2 15:17:39 2025 Construct embedding
+Epochs completed:   0%|            0/500 [00:00]	completed  0  /  500 epochs
+Epochs completed:   0%|            1/500 [00:03]Epochs completed:   4%| ▍          21/500 [00:03]Epochs completed:   8%| ▊          41/500 [00:03]	completed  50  /  500 epochs
+Epochs completed:  12%| █▏         60/500 [00:04]Epochs completed:  16%| █▌         80/500 [00:04]Epochs completed:  20%| ██         100/500 [00:04]	completed  100  /  500 epochs
+Epochs completed:  24%| ██▍        119/500 [00:04]Epochs completed:  28%| ██▊        138/500 [00:04]	completed  150  /  500 epochs
+Epochs completed:  31%| ███▏       157/500 [00:04]Epochs completed:  35%| ███▌       176/500 [00:04]Epochs completed:  39%| ███▉       195/500 [00:04]	completed  200  /  500 epochs
+Epochs completed:  43%| ████▎      214/500 [00:04]Epochs completed:  47%| ████▋      234/500 [00:05]	completed  250  /  500 epochs
+Epochs completed:  51%| █████      254/500 [00:05]Epochs completed:  55%| █████▍     273/500 [00:05]Epochs completed:  58%| █████▊     292/500 [00:05]	completed  300  /  500 epochs
+Epochs completed:  62%| ██████▏    311/500 [00:05]Epochs completed:  66%| ██████▌    331/500 [00:05]	completed  350  /  500 epochs
+Epochs completed:  70%| ███████    351/500 [00:05]Epochs completed:  74%| ███████▍   371/500 [00:05]Epochs completed:  78%| ███████▊   391/500 [00:05]	completed  400  /  500 epochs
+Epochs completed:  82%| ████████▏  410/500 [00:05]Epochs completed:  86%| ████████▌  429/500 [00:06]Epochs completed:  90%| ████████▉  449/500 [00:06]	completed  450  /  500 epochs
+Epochs completed:  94%| █████████▍ 469/500 [00:06]Epochs completed:  98%| █████████▊ 488/500 [00:06]Epochs completed: 100%| ██████████ 500/500 [00:06]
+Tue Sep  2 15:17:47 2025 Finished embedding
+[2025-09-02 15:17:47] [INFO] KMeans with k=3, dist=euclidean
+Got k-means initialisers
+[2025-09-02 15:17:51] [DONE] Clustering stage finished
+[2025-09-02 15:17:51] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
+[2025-09-02 15:17:51] [SAVED] clusters / fractional_occupancy / dwell_time / states
+[2025-09-02 15:17:51] === END MAIN SUCCESS ===
