@@ -64,7 +64,7 @@ Optional GPU. (Recommended).
 
 ### Example dataset for users to try
 
-We include a tiny synthetic dataset you can run end‑to‑end:
+We included a  synthetic dataset you can run end‑to‑end:
 
 * Folder name: `synthetic_tseries_to_try/`
 * Files: `1.csv, 2.csv, ..., 50.csv` (50 subjects; any consistent `[T×nodes]` format your loader supports)
@@ -73,66 +73,30 @@ We include a tiny synthetic dataset you can run end‑to‑end:
 Run on the synthetic data:
 
 ```
-python3 main.py umap 1000,64,30 /path/to/data \
-    -w hamming -l 30 -s 1 -k 3 -t 1.0
+python3 /path/to/code/main.py umap 1000,64,30 /path/to/data \
+    -w hamming -l 30 -s 1 -k 3 
 
 ```
 
-Create demo labels CSV for SVM:
+Demo labels CSV for SVM:
 
-```bash
-python3 - << 'PY'
-import csv
-with open('synthetic_labels.csv','w',newline='') as f:
-    w = csv.writer(f); w.writerow(['subject','group'])
-    for i in range(1,51):
-        w.writerow([str(i), 'GroupA' if i<=25 else 'GroupB'])
-print('Wrote synthetic_labels.csv')
-PY
+labels_50subjects_demo.csv
 ```
 
 Evaluate:
 
-```bash
-python3 code/run_svm.py \
-  --results_root /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/combination_results \
-  --labels_csv   synthetic_labels.csv \
-  --metric roc_auc
-```
+Using run_svm.py code. 
 
 ---
 
-## Quick start
-
-Below are **exact** commands that match the current scripts.
-
-### 1) Single run (one dataset/config)
-
-Run `main_tamar.py` directly with **method, params, path** (positional) and flags:
-
-```bash
-# Neutral, UMAP(1000,64,30), k=3, TW=30, step=1, hamming
-python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/main_tamar.py \
-  umap 1000,64,30 \
-  /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/neutral_246_flat \
-  -w hamming -l 30 -s 1 -k 3
-```
-
-> Notes: output root defaults to `.../combination_results/` but you can override via `OUTROOT=/your/path` env var (keeps logs neat). fileciteturn0file0
-
-### 2) Batch runner (explicit combos via `try_combs.py`)
-
-`try_combs.py` is **self‑configured** (no CLI grids). Edit the top of the file (dataset, tw lengths, steps, method params) and run:
-
-```bash
-python3 -u /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code/try_combs.py
-```
+## Exploratory Use:
+We reccomend running Exploratory run using try_combs.py and run_svm_batch.py.
 
 It will:
 
-* pick the input path according to `data_set` (neutral/bibi)
-* build dated subfolders under `code/results_246_flattened_<data_set>`
-* call `main_tamar.py` per combo with the correct signature. fileciteturn0file1
+* pick the input path according to `data_set`.
+* build dated subfolders.
+* call `main_tamar.py` per combo with the correct signature.
 
 ### 3) Recommended workflow for **group comparison**
 
