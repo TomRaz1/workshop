@@ -96,12 +96,14 @@ You can also choose different parameters depending on your needs — for example
 ```
 Demo labels CSV for SVM:
 
-labels_50subjects_demo.csv
+labels.csv
 ```
 
 Evaluate:
 
 Using run_svm.py. 
+
+svm_reg_sec_exreg.py – if you want to run the pipeline on a third group and check how much the classifier considers it similar to one of the two main groups, you can use this simpler version. It is dedicated to the Religious vs Secular vs ExRe case and reports agreement accuracy of the ExRe participants with a chosen pseudo-label (Religious or Secular).
 
 ---
 
