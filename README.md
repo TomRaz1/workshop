@@ -47,7 +47,8 @@ tqdm
 # optional depending on your settings
 tensorflow       
 pyclustering     
-skggm  
+skggm
+openpyxl
 ```
 
 Optional GPU. (Recommended). 
