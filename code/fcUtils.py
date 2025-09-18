@@ -155,7 +155,6 @@ def state_properties(clusters, dfc, TR, step_size):
         for ind in clusters[i]:
             subj_states[ind] = i
 
-    # ✅ תיקון כאן – astype(int) במקום np.int
     subj_states = np.reshape(subj_states, [nsubjs, nwindows]).astype(int)
 
     frac_occ = np.zeros([nsubjs, nclusters])
