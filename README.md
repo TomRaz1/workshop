@@ -132,6 +132,7 @@ At the end of a run, the pipeline automatically creates the output and saves fou
 - **`fractional_occupancy_umap.npy`** – fraction of total time each subject spent in each state.  
 - **`states_umap.npy`** – centroid representation of each state in the reduced feature space (e.g., UMAP space).  
 
+---
 
 ## Runtime environment
 
@@ -147,4 +148,4 @@ If you use this code in a publication, please cite:
 
 ---
 
-Good luck! :)
+**Good luck! :)**
