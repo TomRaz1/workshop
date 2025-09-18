@@ -39,7 +39,7 @@ def get_lambda(windowed_func):
 
 
 def get_fc(func, lambda_):
-    model = GraphicalLasso(alpha=lambda_, max_iter=200)
+    model = GraphicalLasso(alpha=lambda_, max_iter=50, tol=1e-2)
     model.fit(func.T)
 
     cov = np.array(model.covariance_)
@@ -49,6 +49,7 @@ def get_fc(func, lambda_):
     np.fill_diagonal(fc, 0)
 
     return np.arctanh(fc)
+
 
 
 def get_dfc(in_):
@@ -87,7 +88,6 @@ def get_dfc(in_):
         this_sec = func[:, inds[i]:inds[i] + window_size]
         windowed_func[i] = this_sec * window
 
- 
     lambda_ = 0.1
     print(f"[DEBUG] Using fixed lambda: {lambda_}")
 
