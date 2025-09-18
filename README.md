@@ -136,13 +136,13 @@ At the end of a run, the pipeline automatically creates the output and saves fou
 
 ---
 
-## Runtime environment
+### Runtime environment
 
 These experiments were executed on **Tel‑Aviv University’s HPC cluster** (Linux) with access to **NVIDIA GPUs**. While the code runs on CPU, using GPU acceleration (for UMAP or TensorFlow autoencoder variants) can significantly reduce runtime for large datasets.
 
 ---
 
-## Citation
+### Citation
 
 If you use this code in a publication, please cite:
 
