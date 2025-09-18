@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Batch SVM runner over all fractional_occupancy_* files inside sub-directories combination_results.
+Batch SVM runner over all fractional_occupancy_* files inside sub-directories in combination_results (COMB_DIR).
 Adapted to use labels.xlsx with columns: person_id, group.
 Row 0 in fractional_occupancy = subject_id = FIRST_SUBJECT_ID (default 0).
 """
