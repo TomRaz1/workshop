@@ -1,48 +1,0 @@
-[2025-09-02 12:19:12] === START MAIN ===
-[2025-09-02 12:19:12] [CONFIG] Method=umap Params=100,64,15 K=3 TR=1.0
-[2025-09-02 12:19:12] [CONFIG] Window shape=hamming size=30 step=1
-[2025-09-02 12:19:12] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_30_hamming_1/
-[2025-09-02 12:19:12] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-09-02_data_30_hamming_1_k3_umap_100_64_15/
-[2025-09-02 12:19:12] [INFO] Found existing DFC windows. Loading...
-[2025-09-02 12:19:12] [SUMMARY] Subjects=38 | Windows/subject=205 | Nodes=17 | Features=136
-[2025-09-02 12:19:12] [INFO] Starting clustering step
-[2025-09-02 12:19:12] [STAGE] Clustering / Dimensionality reduction
-Using exemplars for kmeans init:
-   original trace 205 windows per subject
-   median 11 (range 8-17) exemplars per subject
-   total 440 exemplars
-2025-09-02 12:19:23.167483: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
-2025-09-02 12:19:23.293775: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
-2025-09-02 12:19:23.294484: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2025-09-02 12:19:25.636604: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-UMAP(n_components=64, verbose=True)
-Tue Sep  2 12:19:29 2025 Construct fuzzy simplicial set
-Tue Sep  2 12:19:29 2025 Finding Nearest Neighbors
-Tue Sep  2 12:19:29 2025 Building RP forest with 9 trees
-Tue Sep  2 12:19:37 2025 NN descent for 13 iterations
-	 1  /  13
-	 2  /  13
-	 3  /  13
-	 4  /  13
-	Stopping threshold met -- exiting after 4 iterations
-Tue Sep  2 12:20:00 2025 Finished Nearest Neighbor Search
-Tue Sep  2 12:20:05 2025 Construct embedding
-Epochs completed:   0%|            0/500 [00:00]	completed  0  /  500 epochs
-Epochs completed:   0%|            1/500 [00:03]Epochs completed:   4%| ▍          19/500 [00:03]Epochs completed:   7%| ▋          36/500 [00:03]	completed  50  /  500 epochs
-Epochs completed:  11%| █          53/500 [00:04]Epochs completed:  14%| █▍         70/500 [00:04]Epochs completed:  17%| █▋         87/500 [00:04]	completed  100  /  500 epochs
-Epochs completed:  21%| ██         105/500 [00:04]Epochs completed:  24%| ██▍        122/500 [00:04]Epochs completed:  28%| ██▊        140/500 [00:04]	completed  150  /  500 epochs
-Epochs completed:  31%| ███▏       157/500 [00:04]Epochs completed:  35%| ███▌       175/500 [00:04]Epochs completed:  38%| ███▊       192/500 [00:04]	completed  200  /  500 epochs
-Epochs completed:  42%| ████▏      209/500 [00:04]Epochs completed:  45%| ████▌      227/500 [00:05]Epochs completed:  49%| ████▉      244/500 [00:05]	completed  250  /  500 epochs
-Epochs completed:  52%| █████▏     262/500 [00:05]Epochs completed:  56%| █████▌     279/500 [00:05]Epochs completed:  59%| █████▉     296/500 [00:05]	completed  300  /  500 epochs
-Epochs completed:  63%| ██████▎    313/500 [00:05]Epochs completed:  66%| ██████▌    330/500 [00:05]Epochs completed:  69%| ██████▉    347/500 [00:05]	completed  350  /  500 epochs
-Epochs completed:  73%| ███████▎   364/500 [00:05]Epochs completed:  76%| ███████▋   382/500 [00:06]Epochs completed:  80%| ████████   400/500 [00:06]	completed  400  /  500 epochs
-Epochs completed:  83%| ████████▎  417/500 [00:06]Epochs completed:  87%| ████████▋  434/500 [00:06]	completed  450  /  500 epochs
-Epochs completed:  90%| █████████  451/500 [00:06]Epochs completed:  94%| █████████▎ 468/500 [00:06]Epochs completed:  97%| █████████▋ 486/500 [00:06]Epochs completed: 100%| ██████████ 500/500 [00:06]
-Tue Sep  2 12:20:15 2025 Finished embedding
-[2025-09-02 12:20:15] [INFO] KMeans with k=3, dist=euclidean
-Got k-means initialisers
-[2025-09-02 12:20:20] [DONE] Clustering stage finished
-[2025-09-02 12:20:20] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
-[2025-09-02 12:20:20] [SAVED] clusters / fractional_occupancy / dwell_time / states
-[2025-09-02 12:20:20] === END MAIN SUCCESS ===

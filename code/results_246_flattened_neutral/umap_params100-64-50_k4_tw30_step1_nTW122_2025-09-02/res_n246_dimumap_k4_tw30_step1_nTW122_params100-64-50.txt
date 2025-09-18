@@ -1,47 +1,0 @@
-[2025-09-02 12:47:24] === START MAIN ===
-[2025-09-02 12:47:24] [CONFIG] Method=umap Params=100,64,50 K=4 TR=1.0
-[2025-09-02 12:47:24] [CONFIG] Window shape=hamming size=30 step=1
-[2025-09-02 12:47:24] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_30_hamming_1/
-[2025-09-02 12:47:24] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-09-02_data_30_hamming_1_k4_umap_100_64_50/
-[2025-09-02 12:47:24] [INFO] Found existing DFC windows. Loading...
-[2025-09-02 12:47:24] [SUMMARY] Subjects=38 | Windows/subject=205 | Nodes=17 | Features=136
-[2025-09-02 12:47:24] [INFO] Starting clustering step
-[2025-09-02 12:47:24] [STAGE] Clustering / Dimensionality reduction
-Using exemplars for kmeans init:
-   original trace 205 windows per subject
-   median 11 (range 8-17) exemplars per subject
-   total 440 exemplars
-2025-09-02 12:47:34.701971: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
-2025-09-02 12:47:34.828825: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
-2025-09-02 12:47:34.829548: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2025-09-02 12:47:37.287329: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-UMAP(n_components=64, n_neighbors=50, verbose=True)
-Tue Sep  2 12:47:41 2025 Construct fuzzy simplicial set
-Tue Sep  2 12:47:41 2025 Finding Nearest Neighbors
-Tue Sep  2 12:47:41 2025 Building RP forest with 9 trees
-Tue Sep  2 12:47:49 2025 NN descent for 13 iterations
-	 1  /  13
-	 2  /  13
-	 3  /  13
-	Stopping threshold met -- exiting after 3 iterations
-Tue Sep  2 12:48:14 2025 Finished Nearest Neighbor Search
-Tue Sep  2 12:48:20 2025 Construct embedding
-Epochs completed:   0%|            0/500 [00:00]	completed  0  /  500 epochs
-Epochs completed:   0%|            1/500 [00:03]Epochs completed:   2%| ▏          12/500 [00:03]Epochs completed:   4%| ▍          21/500 [00:03]Epochs completed:   6%| ▌          30/500 [00:04]Epochs completed:   8%| ▊          38/500 [00:04]Epochs completed:   9%| ▉          47/500 [00:04]	completed  50  /  500 epochs
-Epochs completed:  11%| █          56/500 [00:04]Epochs completed:  13%| █▎         65/500 [00:04]Epochs completed:  15%| █▍         74/500 [00:04]Epochs completed:  17%| █▋         83/500 [00:04]Epochs completed:  18%| █▊         92/500 [00:04]	completed  100  /  500 epochs
-Epochs completed:  20%| ██         101/500 [00:04]Epochs completed:  22%| ██▏        110/500 [00:05]Epochs completed:  24%| ██▍        120/500 [00:05]Epochs completed:  26%| ██▌        129/500 [00:05]Epochs completed:  28%| ██▊        138/500 [00:05]Epochs completed:  29%| ██▉        147/500 [00:05]	completed  150  /  500 epochs
-Epochs completed:  31%| ███        156/500 [00:05]Epochs completed:  33%| ███▎       165/500 [00:05]Epochs completed:  35%| ███▌       175/500 [00:05]Epochs completed:  37%| ███▋       184/500 [00:05]Epochs completed:  39%| ███▊       193/500 [00:05]	completed  200  /  500 epochs
-Epochs completed:  41%| ████       203/500 [00:06]Epochs completed:  42%| ████▏      212/500 [00:06]Epochs completed:  44%| ████▍      221/500 [00:06]Epochs completed:  46%| ████▌      230/500 [00:06]Epochs completed:  48%| ████▊      239/500 [00:06]Epochs completed:  50%| ████▉      248/500 [00:06]	completed  250  /  500 epochs
-Epochs completed:  51%| █████▏     257/500 [00:06]Epochs completed:  53%| █████▎     266/500 [00:06]Epochs completed:  55%| █████▌     275/500 [00:06]Epochs completed:  57%| █████▋     284/500 [00:07]Epochs completed:  59%| █████▉     294/500 [00:07]	completed  300  /  500 epochs
-Epochs completed:  61%| ██████     303/500 [00:07]Epochs completed:  62%| ██████▏    312/500 [00:07]Epochs completed:  64%| ██████▍    321/500 [00:07]Epochs completed:  66%| ██████▌    330/500 [00:07]Epochs completed:  68%| ██████▊    339/500 [00:07]Epochs completed:  70%| ██████▉    348/500 [00:07]	completed  350  /  500 epochs
-Epochs completed:  71%| ███████▏   357/500 [00:07]Epochs completed:  73%| ███████▎   366/500 [00:08]Epochs completed:  75%| ███████▌   375/500 [00:08]Epochs completed:  77%| ███████▋   384/500 [00:08]Epochs completed:  79%| ███████▊   393/500 [00:08]	completed  400  /  500 epochs
-Epochs completed:  80%| ████████   402/500 [00:08]Epochs completed:  82%| ████████▏  411/500 [00:08]Epochs completed:  84%| ████████▍  420/500 [00:08]Epochs completed:  86%| ████████▌  429/500 [00:08]Epochs completed:  88%| ████████▊  438/500 [00:08]Epochs completed:  89%| ████████▉  447/500 [00:09]	completed  450  /  500 epochs
-Epochs completed:  91%| █████████  456/500 [00:09]Epochs completed:  93%| █████████▎ 465/500 [00:09]Epochs completed:  95%| █████████▍ 474/500 [00:09]Epochs completed:  97%| █████████▋ 483/500 [00:09]Epochs completed:  98%| █████████▊ 492/500 [00:09]Epochs completed: 100%| ██████████ 500/500 [00:09]
-Tue Sep  2 12:48:32 2025 Finished embedding
-[2025-09-02 12:48:32] [INFO] KMeans with k=4, dist=euclidean
-Got k-means initialisers
-[2025-09-02 12:48:37] [DONE] Clustering stage finished
-[2025-09-02 12:48:37] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
-[2025-09-02 12:48:37] [SAVED] clusters / fractional_occupancy / dwell_time / states
-[2025-09-02 12:48:37] === END MAIN SUCCESS ===

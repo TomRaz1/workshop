@@ -106,7 +106,7 @@ Using run_svm.py.
 ---
 
 ## Exploratory Use:
-We reccomend running Exploratory run using try_combs.py and run_svm_batch.py.
+We reccomend running Exploratory run using try_combs.py and run_svm.py.
 
 It will:
 

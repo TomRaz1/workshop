@@ -1,47 +1,0 @@
-[2025-08-29 14:29:42] === START MAIN ===
-[2025-08-29 14:29:42] [CONFIG] Method=umap Params=100,128,50 K=2 TR=1.0
-[2025-08-29 14:29:42] [CONFIG] Window shape=hamming size=30 step=1
-[2025-08-29 14:29:42] [PATH] Data folder: /home/yandex/0368352201_BrainWS2025b/tomraz/data/data_30_hamming_1/
-[2025-08-29 14:29:42] [PATH] Output folder: /home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/2025-08-29_data_30_hamming_1_k2_umap_100_128_50/
-[2025-08-29 14:29:42] [INFO] Found existing DFC windows. Loading...
-[2025-08-29 14:29:42] [SUMMARY] Subjects=38 | Windows/subject=205 | Nodes=17 | Features=136
-[2025-08-29 14:29:42] [INFO] Starting clustering step
-[2025-08-29 14:29:42] [STAGE] Clustering / Dimensionality reduction
-Using exemplars for kmeans init:
-   original trace 205 windows per subject
-   median 11 (range 8-17) exemplars per subject
-   total 440 exemplars
-2025-08-29 14:29:51.242611: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
-2025-08-29 14:29:51.302421: I tensorflow/tsl/cuda/cudart_stub.cc:28] Could not find cuda drivers on your machine, GPU will not be used.
-2025-08-29 14:29:51.303148: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
-To enable the following instructions: AVX2 AVX512F FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2025-08-29 14:29:59.170633: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
-UMAP(n_components=128, n_neighbors=50, verbose=True)
-Fri Aug 29 14:30:14 2025 Construct fuzzy simplicial set
-Fri Aug 29 14:30:14 2025 Finding Nearest Neighbors
-Fri Aug 29 14:30:14 2025 Building RP forest with 9 trees
-Fri Aug 29 14:30:18 2025 NN descent for 13 iterations
-	 1  /  13
-	 2  /  13
-	 3  /  13
-	Stopping threshold met -- exiting after 3 iterations
-Fri Aug 29 14:30:34 2025 Finished Nearest Neighbor Search
-Fri Aug 29 14:30:37 2025 Construct embedding
-Epochs completed:   0%|            0/500 [00:00]	completed  0  /  500 epochs
-Epochs completed:   0%|            1/500 [00:02]Epochs completed:   2%| ▏          10/500 [00:02]Epochs completed:   4%| ▎          18/500 [00:02]Epochs completed:   5%| ▌          25/500 [00:02]Epochs completed:   7%| ▋          34/500 [00:02]Epochs completed:   9%| ▊          43/500 [00:02]	completed  50  /  500 epochs
-Epochs completed:  10%| █          51/500 [00:02]Epochs completed:  12%| █▏         59/500 [00:02]Epochs completed:  13%| █▎         67/500 [00:03]Epochs completed:  15%| █▌         75/500 [00:03]Epochs completed:  17%| █▋         83/500 [00:03]Epochs completed:  18%| █▊         91/500 [00:03]Epochs completed:  20%| █▉         99/500 [00:03]	completed  100  /  500 epochs
-Epochs completed:  21%| ██▏        107/500 [00:03]Epochs completed:  23%| ██▎        115/500 [00:03]Epochs completed:  25%| ██▍        123/500 [00:03]Epochs completed:  26%| ██▌        131/500 [00:03]Epochs completed:  28%| ██▊        139/500 [00:04]Epochs completed:  29%| ██▉        147/500 [00:04]	completed  150  /  500 epochs
-Epochs completed:  31%| ███        155/500 [00:04]Epochs completed:  33%| ███▎       163/500 [00:04]Epochs completed:  34%| ███▍       171/500 [00:04]Epochs completed:  36%| ███▌       179/500 [00:04]Epochs completed:  37%| ███▋       187/500 [00:04]Epochs completed:  39%| ███▉       196/500 [00:04]	completed  200  /  500 epochs
-Epochs completed:  41%| ████       204/500 [00:04]Epochs completed:  42%| ████▏      212/500 [00:05]Epochs completed:  44%| ████▍      220/500 [00:05]Epochs completed:  46%| ████▌      228/500 [00:05]Epochs completed:  47%| ████▋      236/500 [00:05]Epochs completed:  49%| ████▉      244/500 [00:05]	completed  250  /  500 epochs
-Epochs completed:  50%| █████      252/500 [00:05]Epochs completed:  52%| █████▏     260/500 [00:05]Epochs completed:  54%| █████▎     268/500 [00:05]Epochs completed:  55%| █████▌     276/500 [00:05]Epochs completed:  57%| █████▋     284/500 [00:06]Epochs completed:  58%| █████▊     292/500 [00:06]Epochs completed:  60%| ██████     300/500 [00:06]	completed  300  /  500 epochs
-Epochs completed:  62%| ██████▏    308/500 [00:06]Epochs completed:  63%| ██████▎    316/500 [00:06]Epochs completed:  65%| ██████▍    324/500 [00:06]Epochs completed:  66%| ██████▋    332/500 [00:06]Epochs completed:  68%| ██████▊    340/500 [00:06]Epochs completed:  70%| ██████▉    348/500 [00:06]	completed  350  /  500 epochs
-Epochs completed:  71%| ███████▏   357/500 [00:06]Epochs completed:  73%| ███████▎   365/500 [00:07]Epochs completed:  75%| ███████▍   373/500 [00:07]Epochs completed:  76%| ███████▌   381/500 [00:07]Epochs completed:  78%| ███████▊   389/500 [00:07]Epochs completed:  79%| ███████▉   397/500 [00:07]	completed  400  /  500 epochs
-Epochs completed:  81%| ████████   405/500 [00:07]Epochs completed:  83%| ████████▎  413/500 [00:07]Epochs completed:  84%| ████████▍  421/500 [00:07]Epochs completed:  86%| ████████▌  428/500 [00:08]Epochs completed:  87%| ████████▋  435/500 [00:08]Epochs completed:  88%| ████████▊  442/500 [00:08]Epochs completed:  90%| █████████  450/500 [00:08]	completed  450  /  500 epochs
-Epochs completed:  92%| █████████▏ 458/500 [00:08]Epochs completed:  93%| █████████▎ 466/500 [00:08]Epochs completed:  95%| █████████▍ 474/500 [00:08]Epochs completed:  96%| █████████▋ 482/500 [00:08]Epochs completed:  98%| █████████▊ 490/500 [00:08]Epochs completed: 100%| █████████▉ 498/500 [00:09]Epochs completed: 100%| ██████████ 500/500 [00:09]
-Fri Aug 29 14:30:50 2025 Finished embedding
-[2025-08-29 14:30:50] [INFO] KMeans with k=2, dist=euclidean
-Got k-means initialisers
-[2025-08-29 14:30:59] [DONE] Clustering stage finished
-[2025-08-29 14:30:59] [STAGE] Computing temporal properties (fractional occupancy, dwell time, states)
-[2025-08-29 14:31:00] [SAVED] clusters / fractional_occupancy / dwell_time / states
-[2025-08-29 14:31:00] === END MAIN SUCCESS ===

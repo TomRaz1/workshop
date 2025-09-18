@@ -1,132 +1,98 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """
-ASSUMPTIONS ABOUT FILE STRUCTURE AND DATA
------------------------------------------
-1) Per-subject label files live in one folder and are named:
-      l_b_<ID>.npy  or  r_b_<ID>.npy or l_n_<ID>.npy  or  r_n_<ID>.npy )
-   where:
-      - the first letter is the class label: 'l' or 'r'
-      - <ID> is a 1-based integer subject ID (e.g., 1, 2, 3, ...)
-
-2) A single dwell-time matrix exists at dwell_time.npy (or a path you provide),
-   with shape [num_subjects X num_states].
-   Row (ID-1) corresponds to subject ID = <ID>. 
-   Example: subject ID 1 is at row index 0.
-
-3) Dwell-time values are ALREADY proportions per subject (i.e., rows sum to ~1).
-   Therefore, no additional conversion to proportions is needed.
-
-4) We keep labels as strings 'l' and 'r' (not converting to 0/1).
-   For metrics that require a positive class, we treat 'r' as positive.
-
-Edit the paths below before running.
+Batch SVM runner over all fractional_occupancy_* files inside combination_results.
+Adapted to use labels.xlsx with columns: person_id, group.
+Row 0 in fractional_occupancy = subject_id = FIRST_SUBJECT_ID (default 21).
 """
 
 import os
-import glob
 import re
+import glob
+import json
+import argparse
 import numpy as np
+import pandas as pd
+from typing import List, Tuple, Optional, Dict, Any
+
 from sklearn.model_selection import StratifiedKFold, GridSearchCV, cross_val_predict
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-from sklearn.metrics import accuracy_score, f1_score, roc_auc_score, classification_report
+from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 
 
-# ======= INPUT PATHS (EDIT THESE) =======
-LABELS_FOLDER = "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat" #or neutral_246_flat
-#r"path\to\per_subject_label_files"   # folder containing l_b_<ID>.npy / r_b_<ID>.npy
-DWELL_PATH = DWELL_PATH = "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/dwells_for_svm/dwell_time_pca.npy"
+# ------------------------- Defaults -------------------------
 
-#r"path\to\dwell_time.npy"            # matrix [num_subjects × num_states]
+DEFAULTS = {
+    "COMB_DIR": ".",
+    "OUT_CSV":  "./all_svm_results_fractional.csv",
+    "RANDOM_STATE": 42,
+    "LABELS_XLSX": "./labels.xlsx",
+    "FIRST_SUBJECT_ID": 21,
+    "POS_CLASS": "Rel",
+}
 
 
-def collect_ids_and_labels(labels_folder: str):
+# ------------------------- Label utilities -------------------------
+
+def collect_ids_and_labels_from_xlsx(xlsx_path: str) -> Tuple[List[int], np.ndarray, Dict[int, int]]:
     """
-    Scan 'labels_folder' for files like:
-      l_b_sub-2_bibiindictment_yeo17... .npy
-      r_n_sub-15_something.npy
-    Extract:
-      - label: first char 'l' or 'r'
-      - id:    digits after 'sub-'
-    Returns:
-      ids: sorted list of IDs (ints)
-      y:   numpy array of labels aligned to ids
+    Read labels.xlsx with columns: person_id, group.
+    Returns ids (sorted), y (np.array of group strings), and id2idx mapping.
     """
-    pattern = re.compile(r'^(?P<label>[lr])_(?P<grp>[bn])_sub-(?P<id>\d+).*\.npy$', re.IGNORECASE)
-    rows = []  # (id_int, label_char)
+    df = pd.read_excel(xlsx_path)
+    if not {"person_id", "group"}.issubset(df.columns):
+        raise RuntimeError(f"'{xlsx_path}' must have columns: person_id, group")
 
-    for name in os.listdir(labels_folder):
-        if not name.lower().endswith(".npy"):
-            continue
-        m = pattern.match(name)
-        if not m:
-            continue
-        sid = int(m.group("id"))
-        label = m.group("label").lower()  # 'l' or 'r'
-        rows.append((sid, label))
+    df = df.dropna(subset=["person_id", "group"])
+    df["person_id"] = df["person_id"].astype(int)
+    df["group"] = df["group"].astype(str)
+    df = df.sort_values("person_id")
 
-    if not rows:
-        raise RuntimeError(
-            f"No matching .npy files found in '{labels_folder}'. "
-            "Expected names like l_b_sub-12_*.npy or r_n_sub-7_*.npy."
+    ids = df["person_id"].tolist()
+    y = df["group"].to_numpy(dtype=object)
+    id2idx = {sid: i for i, sid in enumerate(ids)}
+    return ids, y, id2idx
+
+
+def build_X_by_ids_with_offset(frac_path: str, ids: List[int], first_subject_id: int) -> Tuple[np.ndarray, List[int]]:
+    """
+    Map row i in fractional_occupancy to subject_id = first_subject_id + i.
+    Stack rows in the order of 'ids' (filtering any IDs outside the file's row range).
+    """
+    F = np.load(frac_path)
+    if F.ndim != 2:
+        raise ValueError(f"'{frac_path}' must be 2D, got shape {F.shape}")
+
+    min_id = first_subject_id
+    max_id = first_subject_id + F.shape[0] - 1
+    in_range_ids = [sid for sid in ids if min_id <= sid <= max_id]
+    if not in_range_ids:
+        raise ValueError(
+            f"No overlapping subject IDs between labels and '{os.path.basename(frac_path)}' "
+            f"(file rows cover IDs [{min_id}..{max_id}])."
         )
 
-    rows.sort(key=lambda x: x[0])
-    ids = [sid for (sid, _) in rows]
-    y   = np.array([label for (_, label) in rows], dtype=object)
-    return ids, y
+    def id_to_row(sid: int) -> int:
+        return sid - first_subject_id
 
-def build_X_by_ids(dwell_path: str, ids: list[int]):
+    rows = [F[id_to_row(sid)] for sid in in_range_ids]
+    X = np.vstack(rows)
+    return X, in_range_ids
+
+
+# ------------------------- SVM runner -------------------------
+
+def run_svm_cv(X: np.ndarray, y: np.ndarray, random_state: int = 42, pos_label: Optional[str] = None) -> Dict[str, Any]:
     """
-    Load dwell_time (2D) and align rows to given 1-based IDs.
-
-    Modes:
-    - Direct (ID-1): row for subject ID == ID-1 (original assumption).
-    - Compact order: if max(ID) > num_rows but len(ids) == num_rows,
-      assume rows are in the order of sorted(ids); i.e., row index is the rank
-      of the subject ID within the sorted ID list.
-
-    If neither fits, we drop IDs that don't map and warn.
-    """
-    D = np.load(dwell_path)
-    if D.ndim != 2:
-        raise ValueError(f"'dwell_time.npy' must be 2D, got shape={D.shape}.")
-
-    num_subjects, num_states = D.shape
-    ids_sorted = sorted(ids)
-    max_id = max(ids)
-
-    # Case A: original assumption holds
-    if max_id <= num_subjects:
-        X = np.vstack([D[sid - 1] for sid in ids])
-        return X
-
-    # Case B: compact order likely (same count)
-    if len(ids) == num_subjects:
-        id_to_row = {sid: i for i, sid in enumerate(ids_sorted)}
-        X = np.vstack([D[id_to_row[sid]] for sid in ids])
-        return X
-
-    # Case C: mixed — drop IDs that cannot map, with a clear warning
-    valid_ids_direct = [sid for sid in ids if 1 <= sid <= num_subjects]
-    dropped = sorted(set(ids) - set(valid_ids_direct))
-    print(f"[WARN] Dropping IDs without rows in dwell file: {dropped} "
-          f"(dwell rows={num_subjects})")
-    if not valid_ids_direct:
-        raise IndexError("No IDs can be mapped to dwell rows. Check alignment or rebuild dwell file.")
-    X = np.vstack([D[sid - 1] for sid in valid_ids_direct])
-    return X
-
-
-def run_svm_cv(X: np.ndarray, y: np.ndarray, random_state: int = 42):
-    """
-    Fit an SVM using a Pipeline(StandardScaler -> SVC) with GridSearchCV.
-    Keep labels as 'l'/'r'. We treat 'r' as the positive class for metrics.
-    Returns the best estimator and prints CV performance.
+    SVM + GridSearchCV. scoring='accuracy' to support multi-class;
+    if there are exactly 2 classes and pos_label is provided — also compute ROC-AUC.
     """
     pipe = Pipeline([
         ("scaler", StandardScaler()),
-        ("svc", SVC(probability=True, class_weight="balanced"))
+        ("svc", SVC(probability=True, class_weight="balanced")),
     ])
 
     param_grid = [
@@ -136,50 +102,140 @@ def run_svm_cv(X: np.ndarray, y: np.ndarray, random_state: int = 42):
 
     cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=random_state)
 
-    # GridSearch optimizing ROC-AUC ('r' treated as positive)
     grid = GridSearchCV(
         estimator=pipe,
         param_grid=param_grid,
-        scoring="roc_auc",
+        scoring="accuracy",
         cv=cv,
         n_jobs=-1,
-        refit=True
+        refit=True,
     )
-
     grid.fit(X, y)
-    print("\n=== GridSearchCV Results ===")
-    print("Best params:", grid.best_params_)
-    print("Best mean ROC-AUC (CV):", grid.best_score_)
 
-    best_pipe = grid.best_estimator_
+    best = grid.best_estimator_
+    y_pred  = cross_val_predict(best, X, y, cv=cv, n_jobs=-1, method="predict")
 
-    # Cross-validated predictions with the best params (no train leakage)
-    y_pred  = cross_val_predict(best_pipe, X, y, cv=cv, n_jobs=-1, method="predict")
-    y_proba = cross_val_predict(best_pipe, X, y, cv=cv, n_jobs=-1, method="predict_proba")[:, 1]
+    metrics = {
+        "cv_best_mean_acc": float(grid.best_score_),
+        "cv_acc": float(accuracy_score(y, y_pred)),
+        "cv_f1_macro": float(f1_score(y, y_pred, average="macro")),
+        "cv_roc_auc": None,
+        "best_params": grid.best_params_,
+    }
 
-    print("\n=== Cross-validated Performance (using best params) ===")
-    print("Accuracy:", accuracy_score(y, y_pred))
-    print("F1 (positive='r'):", f1_score(y, y_pred, pos_label='r'))
-    print("ROC-AUC (positive='r'):", roc_auc_score((y == 'r').astype(int), y_proba))
-    print("\nClassification report (pos='r'):\n",
-          classification_report(y, y_pred, target_names=['l', 'r']))
+    classes = np.unique(y)
+    if len(classes) == 2 and pos_label is not None and pos_label in classes:
+        y_proba = cross_val_predict(best, X, y, cv=cv, n_jobs=-1, method="predict_proba")[:, list(best.classes_).index(pos_label)]
+        metrics["cv_roc_auc"] = float(roc_auc_score((y == pos_label).astype(int), y_proba))
 
-    return best_pipe
+    return metrics
 
+
+# ------------------------- Combination parsing -------------------------
+
+def parse_combination_name(name: str) -> Dict[str, Optional[str]]:
+    info = {
+        "date": None, "data_tag": None, "win_size": None, "win_func": None,
+        "step": None, "k": None, "method": None, "method_params": None, "raw_folder": name,
+    }
+    parts = name.split("_")
+    if parts and re.match(r"^\d{4}-\d{2}-\d{2}$", parts[0]):
+        info["date"] = parts[0]
+        parts = parts[1:]
+    i = 0
+    while i < len(parts):
+        tok = parts[i]
+        if tok == "data" and i + 1 < len(parts):
+            info["data_tag"] = parts[i+1]; i += 2; continue
+        if tok.isdigit() and info["win_size"] is None:
+            info["win_size"] = tok; i += 1; continue
+        if tok in ("hamming", "hann", "boxcar", "rect", "rectangular") and info["win_func"] is None:
+            info["win_func"] = tok; i += 1; continue
+        if tok.isdigit() and info["step"] is None:
+            info["step"] = tok; i += 1; continue
+        m = re.match(r"^k(?P<k>\d+)$", tok, re.IGNORECASE)
+        if m and info["k"] is None:
+            info["k"] = m.group("k"); i += 1; continue
+        if tok in ("ae", "pca", "umap", "kmeans", "kmeans-l2"):
+            info["method"] = tok
+            params = []
+            j = i + 1
+            while j < len(parts) and re.match(r"^\d+$", parts[j]):
+                params.append(parts[j]); j += 1
+            info["method_params"] = "_".join(params) if params else None
+            i = j; continue
+        i += 1
+    return info
+
+
+# ------------------------- Fractional file discovery -------------------------
+
+def find_fractional_files(comb_dir: str) -> List[str]:
+    return [fp for fp in glob.glob(os.path.join(comb_dir, "fractional_occupancy*.npy"))
+            if os.path.basename(fp).startswith("fractional_occupancy")]
+
+
+# ------------------------- Main loop -------------------------
 
 def main():
-    # 1) Collect subject IDs and string labels
-    ids, y = collect_ids_and_labels(LABELS_FOLDER)
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--comb_dir", default=DEFAULTS["COMB_DIR"])
+    ap.add_argument("--out_csv",  default=DEFAULTS["OUT_CSV"])
+    ap.add_argument("--random_state", type=int, default=DEFAULTS["RANDOM_STATE"])
+    ap.add_argument("--labels_xlsx", default=DEFAULTS["LABELS_XLSX"])
+    ap.add_argument("--first_subject_id", type=int, default=DEFAULTS["FIRST_SUBJECT_ID"])
+    ap.add_argument("--pos_class", default=DEFAULTS["POS_CLASS"])
+    args = ap.parse_args()
 
-    # 2) Build X (already proportions) by aligning rows to the gathered IDs
-    X = build_X_by_ids(DWELL_PATH, ids)
+    print("[Config]")
+    print(f"  comb_dir   = {args.comb_dir}")
+    print(f"  out_csv    = {args.out_csv}")
+    print(f"  labels_xlsx= {args.labels_xlsx}")
+    print(f"  first_id   = {args.first_subject_id}")
+    print(f"  seed       = {args.random_state}")
 
-    print("X shape:", X.shape)
-    print("y shape:", y.shape)
-    print("First 5 (ID -> label):", list(zip(ids[:5], y[:5])))
+    ids, y, id2idx = collect_ids_and_labels_from_xlsx(args.labels_xlsx)
 
-    # 3) Run SVM with CV & report metrics
-    _ = run_svm_cv(X, y, random_state=42)
+    rows: List[Dict[str, Any]] = []
+    comb_subdirs = sorted([d for d in glob.glob(os.path.join(args.comb_dir, "*")) if os.path.isdir(d)])
+
+    for comb_path in comb_subdirs:
+        comb_name = os.path.basename(comb_path.rstrip(os.sep))
+        meta = parse_combination_name(comb_name)
+        fractional_files = find_fractional_files(comb_path)
+        if not fractional_files:
+            continue
+        for frac_fp in sorted(fractional_files):
+            try:
+                X, used_ids = build_X_by_ids_with_offset(frac_fp, ids, args.first_subject_id)
+                y_used = np.array([id2idx[sid] for sid in used_ids])
+                y_used = y[y_used]
+                res = run_svm_cv(X, y_used, random_state=args.random_state, pos_label=args.pos_class)
+                F = np.load(frac_fp)
+                rows.append({
+                    **meta,
+                    "frac_file": os.path.basename(frac_fp),
+                    "num_subjects": int(F.shape[0]),
+                    "num_states": int(F.shape[1]),
+                    "used_subjects": len(used_ids),
+                    "cv_best_mean_acc": float(res["cv_best_mean_acc"]),
+                    "cv_acc": float(res["cv_acc"]),
+                    "cv_f1_macro": float(res["cv_f1_macro"]),
+                    "cv_roc_auc": None if res["cv_roc_auc"] is None else float(res["cv_roc_auc"]),
+                    "best_params": json.dumps(res["best_params"], ensure_ascii=False),
+                    "error": None,
+                })
+            except Exception as e:
+                rows.append({
+                    **meta, "frac_file": os.path.basename(frac_fp),
+                    "num_subjects": None, "num_states": None, "used_subjects": None,
+                    "cv_best_mean_acc": None, "cv_acc": None, "cv_f1_macro": None, "cv_roc_auc": None,
+                    "best_params": None, "error": str(e)})
+                continue
+
+    df = pd.DataFrame(rows)
+    df.to_csv(args.out_csv, index=False)
+    print(f"[OK] Saved results to: {args.out_csv}")
 
 
 if __name__ == "__main__":
