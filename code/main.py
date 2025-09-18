@@ -203,9 +203,22 @@ if __name__ == '__main__':
     base_folder = os.path.basename(os.path.dirname(args.func_path.rstrip('/')))
 
     # === paths (changed) ===
-    datadir = f'/home/yandex/0368352201_BrainWS2025b/tomraz/data/{base_folder}_{args.window_size}_{args.window_shape}_{args.step}/'
+    datadir = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "Demo",
+    f"{base_folder}_{args.window_size}_{args.window_shape}_{args.step}"
+)
+    datadir = os.path.abspath(datadir) + os.sep
     today_str = datetime.datetime.today().strftime("%Y-%m-%d")
-    outdir = f'/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/combination_results/{today_str}_{base_folder}b_{args.window_size}_{args.window_shape}_{args.step}_k{args.nclusters}_{args.method}'
+    outdir = os.path.join(
+    os.path.dirname(__file__),
+    "..",
+    "combination_results",
+    f"{today_str}_{base_folder}b_{args.window_size}_{args.window_shape}_{args.step}_k{args.nclusters}_{args.method}"
+)
+    outdir = os.path.abspath(outdir)
+
     if args.method in ['ae','umap']:
         for d in D:
             outdir += f'_{d}'
