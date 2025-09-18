@@ -61,7 +61,7 @@ def combo_id(method, method_params, k, tw_len, step, n_nodes):
     return f"{method}|{method_params}|k{k}|tw{tw_len}|s{step}|n{n_nodes}"
 
 def run_main_script(dim_red, k, input_path, window_length, step_size, params, log_path):
-    script_path = os.path.join(base_dir, "main_tamar.py")
+    script_path = os.path.join(base_dir, "main.py")
     cmd = ["python3", "-u", script_path, dim_red, params, input_path,
            "-w","hamming","-l",str(window_length),"-s",str(step_size),"-k",str(k)]
     log("Running command: " + " ".join(cmd))
