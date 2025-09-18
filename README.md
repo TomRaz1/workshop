@@ -132,9 +132,9 @@ At the end of a run, the pipeline automatically creates the output and saves fou
 - **`clusters_umap.npy`** – assignment of each window to a brain state (list of indices per state).  
 - **`dwell_time_umap.npy`** – average dwell time (in windows) each subject spent in each state before switching.  
 - **`fractional_occupancy_umap.npy`** – fraction of total time each subject spent in each state.  
-- **`states_umap.npy`** – centroid representation of each state in the reduced feature space (e.g., UMAP space).  
+- **`states_umap.npy`** – centroid representation of each state in the reduced feature space (e.g., UMAP space).
 
----
+```
 
 ### Runtime environment
 
