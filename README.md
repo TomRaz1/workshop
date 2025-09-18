@@ -4,7 +4,7 @@ An adaptation of **\[apcspencer/dFC\_DimReduction]** with convenience scripts fo
 
 ---
 
-## What this repo does (high level)
+## What this repo does (high level) 
 
 1. **Compute dynamic FC** from sliding‑window correlations on node‑averaged time‑series (or load it from cache if it already exists).  
 2. **Reduce dimensionality** of windowed FC (optional): UMAP / PCA / autoencoder.
