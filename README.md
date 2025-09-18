@@ -97,7 +97,7 @@ You can also choose different parameters depending on your needs — for example
 ```
 Demo labels CSV for SVM:
 
-labels.csv
+labels.xlsx
 ```
 
 Evaluate:
