@@ -23,8 +23,8 @@ STEPS_POLICY = {
 duration_sec = 235 #if data_set=="bibi" else 151 
 
 # === DIRECTORIES ===
-base_dir = "D:/Users/Owner/OneDrive/Desktop/repo_workshop/workshop/code"
-input_path = "D:/Users/Owner/OneDrive/Desktop/repo_workshop/workshop/Demo/Demo_data"
+base_dir = "D:/Users/Owner/OneDrive/Desktop/repo_workshop/workshop/code" #CHANGE
+input_path = "D:/Users/Owner/OneDrive/Desktop/repo_workshop/workshop/Demo/Demo_data" #CHANGE
               #if data_set=="bibi" else
               #"/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/neutral_246_flat")
 output_dir = os.path.join(base_dir, f"try_combs_results") #_{data_set}
