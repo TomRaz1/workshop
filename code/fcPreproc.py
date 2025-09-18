@@ -87,7 +87,7 @@ def get_dfc(in_):
         this_sec = func[:, inds[i]:inds[i] + window_size]
         windowed_func[i] = this_sec * window
 
-    # ✅ קיבוע של lambda
+ 
     lambda_ = 0.1
     print(f"[DEBUG] Using fixed lambda: {lambda_}")
 
