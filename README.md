@@ -123,12 +123,11 @@ A single run is executed in the same way as with the demo dataset.
 When using try_combs, the run is triggered by a simple command, but the specific parameter combinations are defined and adjusted directly in the code.
 
 
-```
-
 ### Output files
 
 At the end of a run, the pipeline automatically creates the output and saves four key files:
 
+```
 - **`clusters_umap.npy`** – assignment of each window to a brain state (list of indices per state).  
 - **`dwell_time_umap.npy`** – average dwell time (in windows) each subject spent in each state before switching.  
 - **`fractional_occupancy_umap.npy`** – fraction of total time each subject spent in each state.  
