@@ -13,7 +13,8 @@ An adaptation of **\[apcspencer/dFC\_DimReduction]** with convenience scripts fo
 5. **Compare groups** (e.g., *Religious* vs *Secular*, or any two label sets) using the extracted features and SVM classifier.
 
 > Designed for **between‑group comparisons** under naturalistic viewing paradigms but is task‑agnostic.
-> Note: Please be aware that running the code may take up to 1.5 hours, depending on the dimensions of the data (i.e., the number of nodes) and the length of the videos.
+
+> **Note: Please be aware that running the code may take up to 1.5 hours, depending on the dimensions of the data (i.e., the number of nodes) and the length of the videos.**
 
 ---
 
