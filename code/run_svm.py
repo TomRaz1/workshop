@@ -30,7 +30,7 @@ DEFAULTS = {
     "OUT_CSV":  "./all_svm_results_fractional.csv",
     "RANDOM_STATE": 42,
     "LABELS_XLSX": "./labels.xlsx",
-    "FIRST_SUBJECT_ID": 0, 
+    "FIRST_SUBJECT_ID": 1, 
     "POS_CLASS": "A",
 }
 
