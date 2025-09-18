@@ -1,12 +1,12 @@
 import os, itertools, datetime, time, json, subprocess, numpy as np, math
 
 # === CONFIGURATION ===
-USE_PARAMETER_RANGES = True
-dim_red_methods = ["ae"]
-k_list = [2,3,4]
-time_window_lengths = [30,40,60]
-steps = [1,15,30,45,60]           # base set; will be filtered by policy below
-n_nodes_options = [246]
+USE_PARAMETER_RANGES = False
+dim_red_methods = ["umap"]
+k_list = [4]
+time_window_lengths = [30]
+steps = [1]           # base set; will be filtered by policy below
+n_nodes_options = [25]
 TR = 1.0
 TIMEOUT_SEC = 420                  # 7 minutes per combo
 MIN_TW_RATIO = 1/10                # skip if tw_len < n_nodes/10
@@ -18,15 +18,16 @@ STEPS_POLICY = {
     60: [1,15,30],
 }
 
-data_set = "bibi"  # or "neutral"
-duration_sec = 235 if data_set=="bibi" else 151
+#data_set = "bibi"  # or "neutral"
+#how much time points to you have? 
+duration_sec = 235 #if data_set=="bibi" else 151 
 
 # === DIRECTORIES ===
-base_dir = "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/code"
-input_path = ("/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/bibi_246_flat"
-              if data_set=="bibi" else
-              "/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/neutral_246_flat")
-output_dir = os.path.join(base_dir, f"results_246_flattened_{data_set}")
+base_dir = "D:/Users/Owner/OneDrive/Desktop/repo_workshop/workshop/code"
+input_path = "D:/Users/Owner/OneDrive/Desktop/repo_workshop/workshop/Demo/Demo_data"
+              #if data_set=="bibi" else
+              #"/home/yandex/0368352201_BrainWS2025b/tomraz/dFC_DimReduction/data/neutral_246_flat")
+output_dir = os.path.join(base_dir, f"try_combs_results") #_{data_set}
 progress_file     = os.path.join(base_dir, "progress.json")
 combinations_file = os.path.join(base_dir, "combinations.json")
 logfile           = os.path.join(base_dir, "run_log.txt")
@@ -62,7 +63,7 @@ def combo_id(method, method_params, k, tw_len, step, n_nodes):
 
 def run_main_script(dim_red, k, input_path, window_length, step_size, params, log_path):
     script_path = os.path.join(base_dir, "main.py")
-    cmd = ["python3", "-u", script_path, dim_red, params, input_path,
+    cmd = ["python", "-u", script_path, dim_red, params, input_path,
            "-w","hamming","-l",str(window_length),"-s",str(step_size),"-k",str(k)]
     log("Running command: " + " ".join(cmd))
     env = os.environ.copy()
