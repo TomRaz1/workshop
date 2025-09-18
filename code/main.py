@@ -284,4 +284,4 @@ if __name__ == '__main__':
         np.save(os.path.join(outdir, f'states_{args.method}.npy'), states)
         log("[SAVED] clusters / fractional_occupancy / dwell_time / states")
 
-    log("=== END MAIN SUCCESS ===")
+    log("=== END MAIN SUCCESS ===") 
