@@ -63,7 +63,7 @@ Optional GPU. (Recommended).
 
 We included a  synthetic dataset you can run end‑to‑end:
 
-* Folder name: `synthetic_tseries_to_try/`
+* Folder name: `Demo\demo_data`
 * Files: `1.csv, 2.csv, ..., 50.csv` (50 subjects; any consistent `[T×nodes]` format your loader supports)
 * **Ad‑hoc groups for demo**: subjects 1–25 → *GroupA*; 26–50 → *GroupB*.
 
