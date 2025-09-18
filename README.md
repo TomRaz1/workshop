@@ -1,16 +1,36 @@
 # dFC DimReduction Pipeline (TAU — workshop/code)
 
-An adaptation of **\[apcspencer/dFC\_DimReduction]** with convenience scripts for running dynamic functional connectivity (dFC) on fMRI time‑series, optional dimensionality reduction (UMAP/PCA/AE), state clustering (k‑means), feature extraction, and downstream **group comparison** (e.g., Relogious vs Secular). The code produces state/time‑in‑state features and evaluation reports.
+An adaptation of **\[apcspencer/dFC\_DimReduction]** with convenience scripts for running dynamic functional connectivity (dFC) on fMRI time‑series, optional dimensionality reduction (UMAP/PCA/AE), state clustering (k‑means), feature extraction, and **group comparison** (e.g., Relogious vs Secular). The code produces state/time‑in‑state features and evaluation reports.
 
 ---
 
 ## What this repo does (high level) 
 
-1. **Compute dynamic FC** from sliding‑window correlations on node‑averaged time‑series (or load it from cache if it already exists).  
-2. **Reduce dimensionality** of windowed FC (optional): UMAP / PCA / autoencoder.
-3. **Cluster** reduced (or full) representations into brain "states" using k‑means.
-4. **Extract temporal features** per subject: dwell time, fraction time, etc.
-5. **Compare groups** (e.g., *Religious* vs *Secular*, or any two label sets) using the extracted features and SVM classifier.
+**Preprocessing & Parcellation**  
+   - For our needs, we preprocessed raw fMRI data. We parcellated brain activity into **246 regions of interest (ROIs)** using the Human      Brainnetome Atlas.  
+ 
+
+1. **Sliding-Window Dynamic Functional Connectivity (dFC)**  
+   - Compute correlations across ROIs within a moving time window. (or load it from cache if it already exists)  
+   - Capture **time-varying connectivity patterns** across the scan. 
+
+2. **Dimensionality Reduction**  
+   - Reduce high-dimensional dFC representations for efficiency.  
+   - Supported methods: **PCA**, **Autoencoder (AE)**, **UMAP**.  
+
+3. **Clustering of Brain States**  
+   - Apply **k-means clustering** to reduced dFC representations.  
+   - Identify recurring “brain states,” represented as centroid connectivity matrices.  
+
+4. **Temporal Metrics Extraction**  
+   - Derive state-related metrics:  
+     - **Fractional Occupancy (FO):** percentage of time spent in each state.  
+     - **Dwell Time (DT):** average continuous time within a state.  
+
+5. **Classification**  
+   - Use extracted features (e.g., FO) as input.  
+   - Train a **Support Vector Machine (SVM)** classifier to separate groups (e.g., Religious vs. Secular).  
+   - Apply the trained model to additional test cases (e.g., Ex-Religious).
 
 > Designed for **between‑group comparisons** under naturalistic viewing paradigms but is task‑agnostic.
 
@@ -21,8 +41,13 @@ An adaptation of **\[apcspencer/dFC\_DimReduction]** with convenience scripts fo
 ## Repo layout (key pieces)
 
 
-* `main.py` — single‑run pipeline over one dataset/config.
-* `try_combs.py` — run a grid of combinations (UMAP params, k, window sizes, etc.). especially for exploratory analyses
+* `main.py` - single‑run over one dataset/config.
+* `try_combs.py`  - run a grid of combinations (UMAP params, k, window sizes, etc.). especially for exploratory analyses
+* run_svm.py - This script performs the **classification stage** (step 5) of the pipeline:
+- **Loads features** extracted from previous steps (e.g., Fractional).  
+- **Trains a Support Vector Machine (SVM)** to distinguish between two groups (e.g., Religious vs. Secular).  
+- **Evaluates performance** of the classifier (e.g., accuracy, ROC-AUC).  
+- Provides the trained model’s predictions and evaluation metrics.  
 
 ---
 
@@ -77,19 +102,19 @@ python3 /path/to/code/main.py umap 1000,64,30 /path/to/data \
 ```
 **Explenation**
 
-Dimensionality reduction: umap
+**Dimensionality reduction**: umap
 
-UMAP parameters: 1000,64,30 (interpreted in the code as number of neighbors = 1000, output dimensions = 64, and minimum distance = 30)
+**UMAP parameters**: 1000,64,30 (interpreted in the code as number of neighbors = 1000, output dimensions = 64, and minimum distance = 30)
 
-Input data path: /path/to/data (folder with node-averaged fMRI time series)
+**Input data path**: /path/to/data (folder with node-averaged fMRI time series)
 
-Window shape: hamming (applied for the sliding-window correlation)
+**Window shape**: hamming (applied for the sliding-window correlation)
 
-Window length: 30 TRs (each dFC window covers 30 time points)
+**Window length**: 30 TRs (each dFC window covers 30 time points)
 
-Step size: 1 TR (windows slide forward one TR at a time, resulting in maximal overlap)
+**Step size**: 1 TR (windows slide forward one TR at a time, resulting in maximal overlap)
 
-Number of clusters: 3 (k-means will partition the dFC windows into three brain states)
+**Number of clusters**: 3 (k-means will partition the dFC windows into three brain states)
 
 
 You can also choose different parameters depending on your needs — for example, replacing umap with pca or ae, changing the window length or step size, or selecting a different number of clusters.
@@ -120,6 +145,8 @@ It will:
 * pick the input path according to `data_set`.
 * build dated subfolders.
 * call `main.py` per combo with the correct signature.
+
+**Note:** For this use we strongly recommend running on a **GPU** to significantly speed up training and evaluation.  
 
 ### 3) Recommended workflow for **group comparison**
 
