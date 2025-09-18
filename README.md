@@ -74,6 +74,7 @@ python3 /path/to/code/main.py umap 1000,64,30 /path/to/data \
 
 ```
 **Explenation**
+
 Dimensionality reduction: umap
 
 UMAP parameters: 1000,64,30 (interpreted in the code as number of neighbors = 1000, output dimensions = 64, and minimum distance = 30)
