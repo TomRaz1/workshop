@@ -121,7 +121,7 @@ It will:
 
 A single run is executed in the same way as with the demo dataset.
 When using try_combs, the run is triggered by a simple command, but the specific parameter combinations are defined and adjusted directly in the code.
-   ```
+```
 
 ### Output files
 
