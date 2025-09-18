@@ -111,7 +111,7 @@ It will:
 
 * pick the input path according to `data_set`.
 * build dated subfolders.
-* call `main_tamar.py` per combo with the correct signature.
+* call `main.py` per combo with the correct signature.
 
 ### 3) Recommended workflow for **group comparison**
 
