@@ -104,6 +104,10 @@ Evaluate:
 Using run_svm.py. 
 
 svm_reg_sec_exreg.py – if you want to run the pipeline on a third group and check how much the classifier considers it similar to one of the two main groups, you can use this simpler version. It is dedicated to the Religious vs Secular vs ExRe case and reports agreement accuracy of the ExRe participants with a chosen pseudo-label (Religious or Secular).
+this script was used in our analysis to check the similarity of the ExRe group to either Religious or Secular.
+It runs on the fractional occupancy files as input and reports agreement accuracy of the ExRe participants with a chosen pseudo-label (Religious or Secular).
+
+⚠️ Note: The limitations of this approach are discussed in detail in the full paper. Using fractional occupancy as the sole basis for comparison may not be the optimal strategy, as explained there.
 
 ---
 
