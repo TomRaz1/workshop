@@ -26,10 +26,10 @@ from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 # ------------------------- Defaults -------------------------
 
 DEFAULTS = {
-    "COMB_DIR": "path to combination directory",
+    "COMB_DIR": "PATH/TO/combination directory",
     "OUT_CSV":  "./all_svm_results_fractional.csv",
     "RANDOM_STATE": 42,
-    "LABELS_XLSX": "./labels.xlsx",
+    "LABELS_XLSX": ".PATH/TO/labels.xlsx",
     "FIRST_SUBJECT_ID": 1, 
     "POS_CLASS": "A",
 }
