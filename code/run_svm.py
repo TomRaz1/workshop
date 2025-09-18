@@ -31,7 +31,7 @@ DEFAULTS = {
     "RANDOM_STATE": 42,
     "LABELS_XLSX": "./labels.xlsx",
     "FIRST_SUBJECT_ID": 0, 
-    "POS_CLASS": "Rel",
+    "POS_CLASS": "A",
 }
 
 
