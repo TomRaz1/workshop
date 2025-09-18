@@ -4,7 +4,7 @@
 """
 Batch SVM runner over all fractional_occupancy_* files inside combination_results.
 Adapted to use labels.xlsx with columns: person_id, group.
-Row 0 in fractional_occupancy = subject_id = FIRST_SUBJECT_ID (default 21).
+Row 0 in fractional_occupancy = subject_id = FIRST_SUBJECT_ID (default 0).
 """
 
 import os
@@ -26,11 +26,11 @@ from sklearn.metrics import accuracy_score, f1_score, roc_auc_score
 # ------------------------- Defaults -------------------------
 
 DEFAULTS = {
-    "COMB_DIR": ".",
+    "COMB_DIR": "path to combination directory",
     "OUT_CSV":  "./all_svm_results_fractional.csv",
     "RANDOM_STATE": 42,
     "LABELS_XLSX": "./labels.xlsx",
-    "FIRST_SUBJECT_ID": 21,
+    "FIRST_SUBJECT_ID": 0, 
     "POS_CLASS": "Rel",
 }
 
